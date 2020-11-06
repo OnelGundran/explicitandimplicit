@@ -1,0 +1,17 @@
+package com.example.mainactivity
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+    gotoOther.setOnClickListener(View.OnClickListener {
+        intent = Intent( packageContext this. OtherActivity::class.java)
+        startActivity(intent)
+    })
+}
